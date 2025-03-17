@@ -11,6 +11,12 @@ repositories {
   mavenCentral()
 }
 
+java {
+  toolchain {
+    languageVersion.set(JavaLanguageVersion.of(21))
+  }
+}
+
 dependencies {
   // Spring
   implementation 'org.springframework.boot:spring-boot-starter-web'
